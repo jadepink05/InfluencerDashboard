@@ -126,7 +126,7 @@ aarav@example.com
 
 ## Power BI Setup
 
-Use `GET /api/export` to download the CSV, then follow `powerbi/POWERBI_GUIDE.md`.
+Use `GET /api/export` to download live CSV data, or open the website and click **Download CSV** to use the bundled Power BI sample file. Then follow `powerbi/POWERBI_GUIDE.md`.
 
 ## Future Improvements
 
