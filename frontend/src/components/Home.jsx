@@ -29,7 +29,7 @@ const Home = () => (
         <div className="hero-actions">
           <a className="primary-button" href="/register">Create Account</a>
           <a className="secondary-button" href="/login">Login</a>
-          <a className="secondary-button" href="/powerbi/influencer_export.csv" download>Download CSV</a>
+          <a className="secondary-button" href={`${import.meta.env.BASE_URL}powerbi/influencer_export.csv`} download>Download CSV</a>
         </div>
       </div>
       <div className="hero-panel">

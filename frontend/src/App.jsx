@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import Home from './components/Home.jsx';
 import Login from './components/Login.jsx';
@@ -15,7 +15,7 @@ const ProtectedRoute = ({ children }) => {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <main>
         <Routes>
@@ -28,7 +28,7 @@ function App() {
           <Route path="/analytics" element={<ProtectedRoute><Analytics /></ProtectedRoute>} />
         </Routes>
       </main>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

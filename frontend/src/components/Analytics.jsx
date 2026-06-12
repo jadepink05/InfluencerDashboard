@@ -19,6 +19,7 @@ const colors = ['#2563eb', '#1f7a5c', '#f59e0b', '#dc2626', '#7c3aed'];
 
 const Analytics = () => {
   const [analytics, setAnalytics] = useState(null);
+  const csvUrl = `${import.meta.env.BASE_URL}powerbi/influencer_export.csv`;
 
   useEffect(() => {
     api.get('/analytics').then((res) => setAnalytics(res.data));
@@ -35,7 +36,7 @@ const Analytics = () => {
       link.click();
       link.remove();
     } catch (error) {
-      window.location.href = '/powerbi/influencer_export.csv';
+      window.location.href = csvUrl;
     }
   };
 
